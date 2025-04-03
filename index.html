@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Periódica Interativa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tabela Periódica Interativa</h1>
+        <p>Explore os elementos químicos e suas propriedades!</p>
+    </header>
+
+    <div id="tabela">
+        <!-- Exemplo de elementos, vou adicionar mais elementos aqui -->
+        <div class="elemento" data-simbolo="H" data-nome="Hidrogênio" data-numero="1" data-massa="1.008" data-grupo="1" data-periodo="1">
+            <div class="elemento-icon">⚡</div> H
+        </div>
+        <div class="elemento" data-simbolo="He" data-nome="Hélio" data-numero="2" data-massa="4.0026" data-grupo="18" data-periodo="1">
+            <div class="elemento-icon">🎈</div> He
+        </div>
+        <div class="elemento" data-simbolo="Li" data-nome="Lítio" data-numero="3" data-massa="6.94" data-grupo="1" data-periodo="2">
+            <div class="elemento-icon">🔥</div> Li
+        </div>
+        <div class="elemento" data-simbolo="Be" data-nome="Berílio" data-numero="4" data-massa="9.0122" data-grupo="2" data-periodo="2">
+            <div class="elemento-icon">💎</div> Be
+        </div>
+        <!-- Mais elementos aqui -->
+        <div class="elemento" data-simbolo="B" data-nome="Boro" data-numero="5" data-massa="10.81" data-grupo="13" data-periodo="2">
+            <div class="elemento-icon">🪶</div> B
+        </div>
+        <div class="elemento" data-simbolo="C" data-nome="Carbono" data-numero="6" data-massa="12.011" data-grupo="14" data-periodo="2">
+            <div class="elemento-icon">🌱</div> C
+        </div>
+        <!-- Continue adicionando até 118 elementos -->
+    </div>
+
+    <section id="quiz">
+        <h2>Quiz sobre Tabela Periódica</h2>
+        <p>Responda as perguntas abaixo e descubra quanto você sabe sobre os elementos químicos!</p>
+
+        <form id="quizForm">
+            <!-- Perguntas -->
+            <div class="question">
+                <label for="q1">Qual é o símbolo do Hidrogênio?</label><br>
+                <input type="text" id="q1" name="q1" placeholder="Resposta">
+            </div>
+            <div class="question">
+                <label for="q2">Qual é o número atômico do Carbono?</label><br>
+                <input type="text" id="q2" name="q2" placeholder="Resposta">
+            </div>
+            <div class="question">
+                <label for="q3">Em qual grupo está o Oxigênio?</label><br>
+                <input type="text" id="q3" name="q3" placeholder="Resposta">
+            </div>
+            <div class="question">
+                <label for="q4">Qual é o símbolo do Cálcio?</label><br>
+                <input type="text" id="q4" name="q4" placeholder="Resposta">
+            </div>
+            <div class="question">
+                <label for="q5">Qual é o número atômico do Hélio?</label><br>
+                <input type="text" id="q5" name="q5" placeholder="Resposta">
+            </div>
+
+            <button type="button" id="submitQuiz">Enviar Respostas</button>
+        </form>
+
+        <div id="resultado" style="display:none;">
+            <h3>Resultado:</h3>
+            <p id="pontuacao"></p>
+        </div>
+    </section>
+
+    <div id="informacoes">
+        <h2>Informações do Elemento</h2>
+        <div id="detalhes">
+            <p id="nome">Nome: </p>
+            <p id="simbolo">Símbolo: </p>
+            <p id="numero">Número Atômico: </p>
+            <p id="massa">Massa: </p>
+            <p id="grupo">Grupo: </p>
+            <p id="periodo">Período: </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
